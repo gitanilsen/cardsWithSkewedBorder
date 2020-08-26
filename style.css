@@ -24,6 +24,7 @@ body {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   color: #fff;
+  padding: 10px 2rem;
 }
 .container {
   display: grid;
@@ -50,6 +51,9 @@ body {
   color: #636e72;
   opacity: 0.4;
   transition: 0.4s;
+}
+.card:hover.card h3 {
+  top: -30px;
 }
 .card h4 {
   color: #fff;
