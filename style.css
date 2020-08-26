@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto&display=swap");
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  /* background-color: #2f3640; */
+  background-color: rgb(5, 4, 4);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  user-select: none;
+}
+
+#heading {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 2rem 2rem;
+}
+
+.container .card {
+  padding: 2rem;
+  position: relative;
+  /* background-color: #2f3640; */
+  background-color: rgb(5, 4, 4);
+
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+.card h3 {
+  position: relative;
+  top: 0;
+  left: 29%;
+  font-family: "Poppins", sans-serif;
+  font-size: 5em;
+  color: #636e72;
+  opacity: 0.4;
+  transition: 0.4s;
+}
+.card h4 {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.card p {
+  color: #fff;
+  font-weight: lighter;
+}
+
+.card a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 1rem;
+  border: 1px solid #636e72;
+  letter-spacing: 2px;
+  position: relative;
+  top: -30px;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.card:hover.card a {
+  top: 0px;
+  opacity: 1;
+}
+
+.card a:hover {
+  background: #fff;
+  color: #2f3640;
+}
+
+.card:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(315deg, #0984e3, #6c5ce7);
+  z-index: -1;
+  transform: skew(2deg, 2deg);
+  transition: 0.5s;
+}
+
+.card:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(315deg, #ffc312, #ee5a24);
+  z-index: -1;
+  transform: skew(2deg, 2deg);
+  transition: 0.5s;
+}
+
+.card:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(315deg, #c4e538, #4cd137);
+  z-index: -1;
+  transform: skew(2deg, 2deg);
+  transition: 0.5s;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+}
