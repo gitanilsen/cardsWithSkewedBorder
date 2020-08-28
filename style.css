@@ -18,6 +18,10 @@ body {
   display: grid;
   place-items: center;
   user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+-webkit-user-select: none;
+-webkit-tap-highlight-color: transparent;
 }
 
 #heading {
