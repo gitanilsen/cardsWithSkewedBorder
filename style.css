@@ -93,6 +93,7 @@ body {
 }
 
 .card a:hover {
+border:none;
   background: #fff;
   color: #2f3640;
 }
